@@ -1,6 +1,6 @@
 # 👨‍💻 Bruno de Fraga  
 
-> **Desenvolvedor Backend | Estudante de Java, Spring Boot e Bancos de Dados | Apaixonado por tecnologia e soluções escaláveis 🚀**
+> **Desenvolvedor Backend | Estudante de Java | Spring Boot | Bancos de Dados | Admiro Arquitetura e Código limpo **
 
 Bem-vindo ao meu GitHub! Aqui você encontrará meus projetos, experimentos e estudos focados em **desenvolvimento backend**, **bancos de dados** e **integração de sistemas**. Meu objetivo é criar soluções robustas, eficientes e alinhadas com as melhores práticas de desenvolvimento.
 
