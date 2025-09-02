@@ -26,8 +26,8 @@ Bem-vindo ao meu espaço no GitHub! Aqui compartilho projetos, experimentos e es
 
 ## 📊 Estatísticas
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=SEU_USUARIO&show_icons=true&theme=tokyonight" alt="GitHub Stats"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=SEU_USUARIO&layout=compact&theme=tokyonight" alt="Top Langs"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=brunofdev&show_icons=true&theme=tokyonight" alt="GitHub Stats"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=brunofdev&layout=compact&theme=tokyonight" alt="Top Langs"/>
 </p>
 
 ---
