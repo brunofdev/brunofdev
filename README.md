@@ -30,6 +30,10 @@ Bem-vindo ao meu GitHub! Aqui você encontrará meus projetos, experimentos e es
 ---
 
 ## 📌 Projetos em Destaque
+- 🔹 [**Sistema de Gerenciamento de WebSite**](https://github.com/brunofdev/portfolio-microservices.git)  
+  Sistema completo para gestão de web site com funções prontas de cadastro e criação de feedbacks.  
+  *Stack*: Java, Spring Boot, Postgree, JPA, REST, JWT, docker, RabbitMq, Prometheus, Grafana, Arquitetura de Micro serviços. 
+
 - 🔹 [**Sistema de Restaurante**](https://github.com/brunofdev/sistema-restaurante-api)  
   Sistema completo para gestão de cardápios, produtos, pedidos, clientes e acompanhamento em tempo real, com autenticação via JWT.  
   *Stack*: Java, Spring Boot, MySQL, JPA, REST, JWT.  
