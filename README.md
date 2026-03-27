@@ -17,6 +17,7 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/bruno-de-fraga-b430aa161/)
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:brunofragaa97@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/brunofdev)
+[![Portfolio](https://img.shields.io/badge/🌐_brunofragadev.com-00d9ff?style=for-the-badge)](https://www.brunofragadev.com)
 [![Status](https://img.shields.io/badge/🟢_Aberto_a_Oportunidades-00c853?style=for-the-badge)](https://www.linkedin.com/in/bruno-de-fraga-b430aa161/)
 [![Profile Views](https://komarev.com/ghpvc/?username=brunofdev&color=00d9ff&style=for-the-badge&label=VISITAS)](https://github.com/brunofdev)
 
@@ -99,13 +100,145 @@ graph LR
 
 ---
 
-## 🚀 Projetos — Código que fala por si só
+##  Projetos 
+
+<!-- ===================================================== -->
+<!--                   DESTAQUE PRINCIPAL                  -->
+<!-- ===================================================== -->
+
+<div align="center">
+
+### ⭐ Projeto em Destaque
+
+</div>
+
+<table>
+<tr>
+<td>
+
+<div align="center">
+
+[![brunofragadev.com](https://img.shields.io/badge/🌐_brunofragadev.com-00d9ff?style=for-the-badge)](https://www.brunofragadev.com)
+&nbsp;
+[![Ver Repositório](https://img.shields.io/badge/Ver_Repositório-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/brunofdev/brunofragadev-api)
+&nbsp;
+[![Swagger](https://img.shields.io/badge/Swagger_UI-85EA2D?style=for-the-badge&logo=swagger&logoColor=black)](https://www.brunofragadev.com/swagger-ui.html)
+
+</div>
+
+<br/>
+
+### 🌐 BrunoFragaDev — Portfolio API
+**O backend de produção da minha própria plataforma. Código real, problema real, solução real.**
+
+API RESTful responsável por toda a infraestrutura de **[brunofragadev.com](https://www.brunofragadev.com)**: autenticação completa, gerenciamento de portfólio e coleta de feedbacks de usuários reais. Um sistema que simula — e entrega — o que uma aplicação de produção exige.
+
+<br/>
+
+<details>
+<summary><b>🏗️ Arquitetura & Decisões Técnicas</b></summary>
+
+<br/>
+
+O projeto segue **Clean Architecture + DDD**, dividido em camadas com responsabilidades bem definidas:
+
+```
+┌─────────────────────────────────────────┐
+│         API / Controllers               │  ← Entrada HTTP, validação de DTOs
+├─────────────────────────────────────────┤
+│         Application (Use Cases)         │  ← Orquestração das regras de negócio
+├─────────────────────────────────────────┤
+│         Domain (Entities + Exceptions)  │  ← Núcleo isolado, sem frameworks
+├─────────────────────────────────────────┤
+│         Infrastructure                  │  ← JPA, Security, E-mail, Handlers
+└─────────────────────────────────────────┘
+```
+
+**Por que Use Cases ao invés de Services?**
+Cada caso de uso resolve **um único problema** — `RegisterUserUseCase`, `ActivateAccountUseCase`, `ProcessGoogleLoginUseCase`. Sem "God Classes". Máxima testabilidade e legibilidade.
+
+**Por que JWT stateless?**
+Escalabilidade horizontal. Qualquer instância valida o token sem depender de sessão centralizada.
+
+**Por que RBAC hierárquico?**
+Roles acumulativas com 4 níveis — `USER → ADMIN1 → ADMIN2 → ADMIN3` — onde cada nível herda as permissões do anterior.
+
+</details>
+
+<details>
+<summary><b>⚙️ O que este sistema faz</b></summary>
+
+<br/>
+
+**🔐 Auth & Segurança**
+- Autenticação via credenciais com geração de token JWT
+- Login social via Google OAuth2
+- RBAC com 4 níveis hierárquicos de acesso
+- Recuperação de senha com código de segurança de 6 dígitos
+
+**👤 Usuários**
+- Cadastro com status pendente e ativação via código enviado por e-mail
+- Edição completa de perfil (bio, links GitHub/LinkedIn, profissão, cidade)
+- Modo anônimo — controle de visibilidade do perfil
+
+**📁 Portfólio**
+- CRUD completo de projetos com galeria de imagens, ficha técnica e guia de setup
+- Passos de configuração sequenciais com comandos de terminal
+
+**💬 Feedbacks**
+- Avaliações (1–5) vinculadas à plataforma ou a projetos específicos
+- Notificação automática para o admin a cada novo feedback
+- Submissão anônima opcional
+
+**🛠️ Infra**
+- Auditoria automática de criação/modificação dos registros
+- Tratamento centralizado de exceções com respostas padronizadas
+- Documentação interativa via Swagger UI / OpenAPI
+
+</details>
+
+<br/>
+
+<div align="center">
+
+![Java](https://img.shields.io/badge/Java_21-ED8B00?style=flat&logo=openjdk&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot_3.4-6DB33F?style=flat&logo=springboot&logoColor=white)
+![Spring Security](https://img.shields.io/badge/Spring_Security-6DB33F?style=flat&logo=springsecurity&logoColor=white)
+![JWT](https://img.shields.io/badge/JWT-000000?style=flat&logo=jsonwebtokens&logoColor=white)
+![OAuth2](https://img.shields.io/badge/Google_OAuth2-4285F4?style=flat&logo=google&logoColor=white)
+![JPA](https://img.shields.io/badge/JPA_/_Hibernate-59666C?style=flat&logo=hibernate&logoColor=white)
+![Swagger](https://img.shields.io/badge/Swagger-85EA2D?style=flat&logo=swagger&logoColor=black)
+![Brevo](https://img.shields.io/badge/Brevo_Email_API-0B996E?style=flat&logo=sendinblue&logoColor=white)
+
+<br/>
+
+[![brunofragadev-api](https://github-readme-stats.vercel.app/api/pin/?username=brunofdev&repo=brunofragadev-api&theme=tokyonight&hide_border=true&title_color=00d9ff&description_lines_count=2)](https://github.com/brunofdev/brunofragadev-api)
+
+</div>
+
+</td>
+</tr>
+</table>
+
+<br/>
+
+---
+
+<!-- ===================================================== -->
+<!--                   OUTROS PROJETOS                     -->
+<!-- ===================================================== -->
+
+<div align="center">
+
+### 📂 Outros Projetos
+
+</div>
 
 <table>
 <tr>
 <td width="55%">
 
-### 🌐 Portfolio Microservices
+### 🔀 Portfolio Microservices
 **O projeto que me custou mais noites de estudo — e valeu cada uma.**
 
 Sistema completo de gerenciamento de website construído com **arquitetura de microsserviços real**: serviços independentes, comunicação assíncrona, autenticação centralizada e observabilidade completa.
@@ -217,12 +350,13 @@ Queries, stored procedures e relatórios corporativos reais em PL/SQL Oracle. CT
 Map<String, String> roadmap = new LinkedHashMap<>();
 
 // Fundação sólida — já está no código
+roadmap.put("Clean Architecture + DDD",    "✅ Aplicado em producao real (brunofragadev-api)");
 roadmap.put("SOLID + Design Patterns",     "✅ Aplicando em projetos reais");
 roadmap.put("OAuth2 + JWT avancado",       "✅ Implementado e documentado");
 roadmap.put("SQL Tuning + CTEs Oracle",    "✅ Repositorio dedicado");
 
 // Em andamento — você vai ver no próximo commit
-roadmap.put("Microsservicos Spring Cloud", "🔄 Aprofundando resiliência e circuit breaker");
+roadmap.put("Microsservicos Spring Cloud", "🔄 Aprofundando resiliencia e circuit breaker");
 roadmap.put("Event-Driven + RabbitMQ",    "🔄 Em uso ativo no portfolio");
 roadmap.put("Docker + CI/CD pipelines",   "🔄 Automatizando deploys");
 
@@ -235,8 +369,6 @@ roadmap.put("Kubernetes basico",          "📌 Apos dominar CI/CD");
 
 ---
 
-## 🤝 Por que me chamar para uma entrevista?
-
 <div align="center">
 
 <table>
@@ -245,6 +377,8 @@ roadmap.put("Kubernetes basico",          "📌 Apos dominar CI/CD");
 
 ### 💡 Hard Skills
 ✅ APIs REST robustas com Spring Boot  
+✅ Clean Architecture + DDD em produção  
+✅ Autenticação completa: JWT + Google OAuth2  
 ✅ Microsserviços reais com Spring Cloud  
 ✅ Mensageria assíncrona com RabbitMQ  
 ✅ Banco de dados além do ORM — PL/SQL real  
@@ -274,6 +408,7 @@ roadmap.put("Kubernetes basico",          "📌 Apos dominar CI/CD");
 
 [![👋 Fala Comigo no LinkedIn](https://img.shields.io/badge/👋_Fala_Comigo_no_LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/bruno-de-fraga-b430aa161/)
 [![📧 Manda um Email](https://img.shields.io/badge/📧_Manda_um_Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:brunofragaa97@gmail.com)
+[![🌐 Ver Portfolio](https://img.shields.io/badge/🌐_Ver_Portfolio-00d9ff?style=for-the-badge)](https://www.brunofragadev.com)
 
 <br/>
 
