@@ -49,7 +49,7 @@ Problema complexo  →  Solução simples  →  Código limpo  →  Produção e
 
 | 🏗️ Projetos no GitHub | ☕ Stack Principal | 🗄️ Bancos Dominados | 📍 Localização | 🌐 Regime |
 |:---:|:---:|:---:|:---:|:---:|
-| **5+** | **Java · Spring Boot · SQL** | **MySQL · PostgreSQL · Oracle** | **Canoas/RS 🇧🇷** | **Remoto ou Híbrido** |
+| **3+** | **Java · Spring Boot · SQL** | **MySQL · PostgreSQL · Oracle** | **Florianópolis/SC 🇧🇷** | **Presencial, Remoto ou Híbrido** |
 
 </div>
 
