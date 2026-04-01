@@ -10,7 +10,7 @@
 ╚═════╝ ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝ ╚═════╝     ╚═════╝ ╚══════╝    ╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝
 ```
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&multiline=true&width=700&height=100&lines=Backend+Developer+%7C+Java+%2B+Spring+Boot;Arquiteto+de+solucoes+%7C+Codigo+limpo+%26+escalavel;Sempre+commitando+melhorias+%F0%9F%9A%80" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&multiline=true&width=700&height=100&lines=Backend+Developer+%7C+Java+%2B+Spring+Boot;Aprendendo+todo+dia+%7C+Codigo+limpo+%26+escalavel;Sempre+commitando+melhorias+%F0%9F%9A%80" alt="Typing SVG" />
 
 <br/>
 
@@ -27,17 +27,18 @@
 
 <br/>
 
-## 🎯 O que me diferencia dos outros devs?
+## 👋 Oi, eu sou o Bruno
 
-> *A maioria dos devs escreve código que funciona.*
-> *Eu escrevo código que **outras pessoas conseguem manter.***
+Desenvolvedor backend focado em Java e Spring Boot, morando em Florianópolis e tentando escrever código que eu mesmo consiga entender quando abrir de novo daqui a 6 meses 😅
 
-Sou alguém que **pensa no problema antes de abrir o editor**, que questiona arquitetura antes de escrever a primeira linha, e que perde o sono quando um serviço em produção tem latência alta.
+Gosto de pensar na arquitetura antes de sair digitando, de questionar se aquela classe realmente precisa ter 400 linhas, e de resolver bugs de produção sem entrar em pânico (ou quase).
 
 ```
-Problema complexo  →  Solução simples  →  Código limpo  →  Produção estável
+Problema complexo  →  Solução simples  →  Código legível  →  Produção estável
        🔴                   🟡                  🟢               🚀
 ```
+
+Ainda tenho muito a aprender — mas aprendo rápido, e esse GitHub é a prova disso.
 
 <br/>
 
@@ -47,7 +48,7 @@ Problema complexo  →  Solução simples  →  Código limpo  →  Produção e
 
 <div align="center">
 
-| 🏗️ Projetos no GitHub | ☕ Stack Principal | 🗄️ Bancos Dominados | 📍 Localização | 🌐 Regime |
+| 🏗️ Projetos no GitHub | ☕ Stack Principal | 🗄️ Bancos que já usei | 📍 Localização | 🌐 Regime |
 |:---:|:---:|:---:|:---:|:---:|
 | **3+** | **Java · Spring Boot · SQL** | **MySQL · PostgreSQL · Oracle** | **Florianópolis/SC 🇧🇷** | **Presencial, Remoto ou Híbrido** |
 
@@ -57,7 +58,7 @@ Problema complexo  →  Solução simples  →  Código limpo  →  Produção e
 
 ---
 
-## 🧠 Stack — do conceito ao deploy
+## 🧠 Stack — do requisito ao deploy
 
 ```mermaid
 graph LR
@@ -77,7 +78,7 @@ graph LR
 
 <div align="center">
 
-### Tecnologias que uso **de verdade** — não só no LinkedIn
+### Tecnologias que uso no dia a dia
 
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
@@ -100,7 +101,7 @@ graph LR
 
 ---
 
-##  Projetos 
+## 🚀 Projetos
 
 <!-- ===================================================== -->
 <!--                   DESTAQUE PRINCIPAL                  -->
@@ -129,9 +130,9 @@ graph LR
 <br/>
 
 ### 🌐 BrunoFragaDev — Portfolio API
-**O backend de produção da minha própria plataforma. Código real, problema real, solução real.**
+**O backend do meu próprio portfólio. Nada melhor pra aprender do que resolver um problema real.**
 
-API RESTful responsável por toda a infraestrutura de **[brunofragadev.com](https://www.brunofragadev.com)**: autenticação completa, gerenciamento de portfólio e coleta de feedbacks de usuários reais. Um sistema que simula — e entrega — o que uma aplicação de produção exige.
+API RESTful que sustenta o [brunofragadev.com](https://www.brunofragadev.com): autenticação, gerenciamento de portfólio e coleta de feedbacks. Foi onde aprendi — na prática — o que uma aplicação em produção realmente exige.
 
 <br/>
 
@@ -140,7 +141,7 @@ API RESTful responsável por toda a infraestrutura de **[brunofragadev.com](http
 
 <br/>
 
-O projeto segue **Clean Architecture + DDD**, dividido em camadas com responsabilidades bem definidas:
+O projeto segue **Clean Architecture + DDD**, com camadas bem separadas:
 
 ```
 ┌─────────────────────────────────────────┐
@@ -155,7 +156,7 @@ O projeto segue **Clean Architecture + DDD**, dividido em camadas com responsabi
 ```
 
 **Por que Use Cases ao invés de Services?**
-Cada caso de uso resolve **um único problema** — `RegisterUserUseCase`, `ActivateAccountUseCase`, `ProcessGoogleLoginUseCase`. Sem "God Classes". Máxima testabilidade e legibilidade.
+Cada caso de uso resolve **um único problema** — `RegisterUserUseCase`, `ActivateAccountUseCase`, `ProcessGoogleLoginUseCase`. Evita classes gigantes e facilita muito os testes.
 
 **Por que JWT stateless?**
 Escalabilidade horizontal. Qualquer instância valida o token sem depender de sessão centralizada.
@@ -239,9 +240,9 @@ Roles acumulativas com 4 níveis — `USER → ADMIN1 → ADMIN2 → ADMIN3` —
 <td width="55%">
 
 ### 🔀 Portfolio Microservices
-**O projeto que me custou mais noites de estudo — e valeu cada uma.**
+**O projeto que mais me custou noites de estudo — e mais me ensinou.**
 
-Sistema completo de gerenciamento de website construído com **arquitetura de microsserviços real**: serviços independentes, comunicação assíncrona, autenticação centralizada e observabilidade completa.
+Sistema de gerenciamento de website com arquitetura de microsserviços: serviços independentes, comunicação assíncrona, autenticação centralizada e observabilidade. Ainda tem coisa pra melhorar, mas foi onde a teoria virou prática de verdade.
 
 **Destaques técnicos:**
 - 🔀 Microsserviços desacoplados com Spring Cloud
@@ -270,13 +271,13 @@ Sistema completo de gerenciamento de website construído com **arquitetura de mi
 ### 🍽️ Sistema de Restaurante API
 **REST API completa, do cardápio ao pedido entregue.**
 
-Backend robusto para gestão total de restaurante com segurança JWT, arquitetura em camadas e código que qualquer dev consegue evoluir.
+Backend para gestão de restaurante com segurança JWT e arquitetura em camadas. Um projeto mais simples, mas que deixei bem organizado justamente pra praticar boas práticas sem a complexidade de microsserviços.
 
 **Destaques técnicos:**
 - 🍕 CRUD completo de cardápio e produtos
 - 🛒 Gestão de pedidos com status em tempo real
 - 🔒 Autenticação e autorização com JWT
-- 🏛️ Arquitetura limpa com separação de responsabilidades
+- 🏛️ Arquitetura em camadas com separação de responsabilidades
 - 📖 Endpoints documentados e testados no Postman
 
 </td>
@@ -296,9 +297,9 @@ Backend robusto para gestão total de restaurante com segurança JWT, arquitetur
 <td width="55%">
 
 ### 📊 Relatórios Corporativos PL/SQL
-**SQL que vai muito além do SELECT * FROM tabela.**
+**SQL que vai além do básico — e me ensinou a respeitar o banco de dados.**
 
-Queries, stored procedures e relatórios corporativos reais em PL/SQL Oracle. CTEs complexas, tuning de performance e iReport — o tipo de SQL que você encontra em empresa grande.
+Queries, stored procedures e relatórios em PL/SQL Oracle. Foi o tipo de trabalho que faz a gente entender por que índice importa e por que `SELECT *` é quase sempre uma má ideia.
 
 **Destaques técnicos:**
 - 📈 Relatórios gerenciais com iReport
@@ -343,26 +344,26 @@ Queries, stored procedures e relatórios corporativos reais em PL/SQL Oracle. CT
 
 ---
 
-## 📚 Roadmap de Estudos
+## 📚 O que estou estudando
 
 ```java
-// O que estou construindo hoje — e onde quero chegar
+// Onde estou e onde quero chegar — trabalho em andamento 🚧
 Map<String, String> roadmap = new LinkedHashMap<>();
 
-// Fundação sólida — já está no código
-roadmap.put("Clean Architecture + DDD",    "✅ Aplicado em producao real (brunofragadev-api)");
-roadmap.put("SOLID + Design Patterns",     "✅ Aplicando em projetos reais");
-roadmap.put("OAuth2 + JWT avancado",       "✅ Implementado e documentado");
-roadmap.put("SQL Tuning + CTEs Oracle",    "✅ Repositorio dedicado");
+// Já usei em projetos reais
+roadmap.put("Clean Architecture + DDD",    "✅ Aplicado no brunofragadev-api");
+roadmap.put("SOLID + Design Patterns",     "✅ Praticando em projetos reais");
+roadmap.put("OAuth2 + JWT",                "✅ Implementado e documentado");
+roadmap.put("SQL Tuning + CTEs Oracle",    "✅ Repositório dedicado");
 
-// Em andamento — você vai ver no próximo commit
-roadmap.put("Microsservicos Spring Cloud", "🔄 Aprofundando resiliencia e circuit breaker");
-roadmap.put("Event-Driven + RabbitMQ",    "🔄 Em uso ativo no portfolio");
+// Em progresso
+roadmap.put("Microsserviços Spring Cloud", "🔄 Aprofundando resiliência e circuit breaker");
+roadmap.put("Event-Driven + RabbitMQ",    "🔄 Em uso ativo no portfólio");
 roadmap.put("Docker + CI/CD pipelines",   "🔄 Automatizando deploys");
 
-// Próximos passos — com data marcada
-roadmap.put("Testes com JUnit + Mockito", "📌 Proximo projeto ja nasce com testes");
-roadmap.put("Kubernetes basico",          "📌 Apos dominar CI/CD");
+// Próximos na fila
+roadmap.put("Testes com JUnit + Mockito", "📌 Próximo projeto já nasce com testes");
+roadmap.put("Kubernetes básico",          "📌 Após dominar CI/CD");
 ```
 
 <br/>
@@ -375,26 +376,26 @@ roadmap.put("Kubernetes basico",          "📌 Apos dominar CI/CD");
 <tr>
 <td align="center" width="50%">
 
-### 💡 Hard Skills
-✅ APIs REST robustas com Spring Boot  
-✅ Clean Architecture + DDD em produção  
-✅ Autenticação completa: JWT + Google OAuth2  
-✅ Microsserviços reais com Spring Cloud  
+### 💡 O que sei fazer
+✅ APIs REST com Spring Boot  
+✅ Clean Architecture + DDD  
+✅ Autenticação JWT + Google OAuth2  
+✅ Microsserviços com Spring Cloud  
 ✅ Mensageria assíncrona com RabbitMQ  
-✅ Banco de dados além do ORM — PL/SQL real  
+✅ PL/SQL além do básico  
 ✅ Observabilidade com Prometheus + Grafana  
-✅ Containers e orquestração com Docker  
+✅ Containers com Docker  
 
 </td>
 <td align="center" width="50%">
 
-### 🧠 Soft Skills
-✅ Pensa antes de codar — arquitetura importa  
-✅ Código documentado, não só funcional  
-✅ Autonomia sem perder comunicação  
-✅ Aprende rápido — esse GitHub prova ↑  
-✅ Não some quando o bug é difícil  
-✅ Aberto a feedback e melhoria contínua  
+### 🤝 Como trabalho
+✅ Penso na arquitetura antes de codar  
+✅ Me preocupo com quem vai manter o código  
+✅ Trabalho bem sozinho e em equipe  
+✅ Aprendo rápido quando precisa  
+✅ Não desapareço quando o bug é difícil  
+✅ Gosto de feedback — ajuda a melhorar  
 
 </td>
 </tr>
@@ -402,7 +403,7 @@ roadmap.put("Kubernetes basico",          "📌 Apos dominar CI/CD");
 
 <br/>
 
-### **Se você leu até aqui — a gente precisa conversar.**
+### Bora conversar? 😄
 
 <br/>
 
@@ -412,9 +413,8 @@ roadmap.put("Kubernetes basico",          "📌 Apos dominar CI/CD");
 
 <br/>
 
-> *"Não contrate um dev que sabe tudo.*
-> *Contrate um dev que aprende rápido, entrega com qualidade*
-> *— e não some quando aparece um bug difícil em produção."*
+> *"Ainda estou aprendendo — mas tenho comprometimento de sobra*
+> *pra compensar o que ainda não sei." 🚀*
 
 </div>
 
