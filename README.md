@@ -32,7 +32,7 @@
 > *A maioria dos devs escreve código que funciona.*
 > *Eu escrevo código que **outras pessoas conseguem manter.***
 
-Não sou só mais um dev que sabe fazer um CRUD. Sou alguém que **pensa no problema antes de abrir o editor**, que questiona arquitetura antes de escrever a primeira linha, e que perde o sono quando um serviço em produção tem latência alta.
+Sou alguém que **pensa no problema antes de abrir o editor**, que questiona arquitetura antes de escrever a primeira linha, e que perde o sono quando um serviço em produção tem latência alta.
 
 ```
 Problema complexo  →  Solução simples  →  Código limpo  →  Produção estável
